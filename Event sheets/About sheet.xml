@@ -44,10 +44,10 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="1465515072270648" type="HPT">
-                            <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;howplay&quot;)</param>
+                            <param id="0" name="Text">&quot;* &quot; &amp; f.Call(&quot;getText&quot;, &quot;howplay&quot;)</param>
                         </action>
                         <action id="0" name="Set text" sid="4828786109292653" type="ST">
-                            <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;settings&quot;)</param>
+                            <param id="0" name="Text">&quot;* &quot; &amp; f.Call(&quot;getText&quot;, &quot;settings&quot;)</param>
                         </action>
                         <action id="0" name="Set text" sid="3098428329274104" type="AuthorTxt">
                             <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;author&quot;)</param>
