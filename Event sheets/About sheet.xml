@@ -17,10 +17,6 @@
                     <param id="0" name="Tag">&quot;loadLanguageFile&quot;</param>
                     <param id="1" name="URL">&quot;strings.&quot; &amp; language &amp; &quot;.xml&quot;</param>
                 </action>
-                <action id="0" name="Set local value" sid="4238613755438169" type="WebStorage">
-                    <param id="0" name="Key">&quot;Language&quot;</param>
-                    <param id="1" name="Value">&quot;en&quot;</param>
-                </action>
             </actions>
         </event-block>
         <event-group description="" sid="2397998118213725" title="Language">

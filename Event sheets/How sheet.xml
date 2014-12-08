@@ -3,23 +3,14 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>How sheet</name>
     <events>
-        <variable constant="0" name="language2" sid="9533009527576268" static="0" type="text">en</variable>
         <event-block sid="7379532425492407">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="4204582069923506" type="System" />
             </conditions>
             <actions>
-                <action id="-9" name="Set value" sid="6928512503800083" type="System">
-                    <param id="0" name="Variable">language</param>
-                    <param id="1" name="Value">Webstorage.localvalue(&quot;Language&quot;)</param>
-                </action>
                 <action id="0" name="Request URL" sid="2814240220168438" type="AJAX">
                     <param id="0" name="Tag">&quot;loadLanguageFile&quot;</param>
                     <param id="1" name="URL">&quot;strings.&quot; &amp; language &amp; &quot;.xml&quot;</param>
-                </action>
-                <action id="0" name="Set local value" sid="903552252732305" type="WebStorage">
-                    <param id="0" name="Key">&quot;Language&quot;</param>
-                    <param id="1" name="Value">&quot;en&quot;</param>
                 </action>
             </actions>
         </event-block>
