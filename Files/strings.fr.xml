@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <strings>
-	<string id='world'>Monde</string>
-	<string id='level'>Étape</string>
-	<string id='begin'>Appuyez sur 'Entrée' pour commencer.</string>
+	<string id='about'>Propos de</string>
+	<string id='created'>Créé en 17/03/14</string>
+	<string id='howplay'>Comment jouer</string>
+	<string id='author'>Jeu créé par Daniell Mesquita, directeur général de Gamlr</string>
 </strings>

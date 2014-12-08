@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <strings>
-	<string id='world'>Welt</string>
-	<string id='level'>Stufe</string>
-	<string id='begin'>Drücken Sie die Eingabetaste, um zu beginnen.</string>
+	<string id='about'>Wir über</string>
+	<string id='created'>Erstellt am 17.03.14</string>
+	<string id='howplay'>Wie man spielt</string>
+	<string id='author'>Spiel von Daniell Mesquita, CEO von Gamlr</string>
 </strings>
