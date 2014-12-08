@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+	<string id='about'>약</string>
+	<string id='created'>03.17.14에 작성된</string>
+	<string id='howplay'>게임 방법</string>
+	<string id='starthegame'>게임을 시작</string>
+	<string id='drivethecar'>자동차를 운전</string>
+	<string id='author'>다니엘 메스 퀴타 Gamlr의 CEO에 의해 만들어진 게임</string>
+</strings>
