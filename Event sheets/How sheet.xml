@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>How sheet</name>
+    <events>
+        <event-block any="1" sid="7766414250650473">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="6119208146741342" type="Keyboard">
+                    <param id="0" name="Key">8 (Backspace)</param>
+                </condition>
+                <condition id="0" name="On key pressed" sid="7077911581558023" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+                <condition id="6" name="On object clicked" sid="1043053754011265" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">arrowleft</param>
+                </condition>
+                <condition id="3" name="On touched object" sid="614689339710602" type="Touch">
+                    <param id="0" name="Object">arrowleft</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-43" name="Go to next/previous layout" sid="4021552162137526" type="System">
+                    <param id="0" name="Which">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

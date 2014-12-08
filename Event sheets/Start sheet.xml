@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Start sheet</name>
+    <events>
+        <event-block sid="453897614583645">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4748305147281268" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="582467439845541" type="Username">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2696307341446529" type="Welcometxt">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-27" name="Set effect enabled" sid="9281038935503449" type="Car">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Overlay&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="1911489541362786" title="Start">
+            <sub-events>
+                <event-block any="1" sid="7229843099129717">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="5099248529884113" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="6" name="On object clicked" sid="5777996775980865" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">PS</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="7855667814078788" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">9</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="2495737376216286" type="Touch">
+                            <param id="0" name="Object">PS</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="5525964749082553" type="System">
+                            <param id="0" name="Layout">Layout 10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="563114776117504" title="Facebook Login">
+            <sub-events>
+                <event-block any="1" sid="4461818260889221">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="7925087933185605" type="Keyboard">
+                            <param id="0" name="Key">70 (F)</param>
+                        </condition>
+                        <condition id="6" name="On object clicked" sid="4904419889161763" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">fbtn</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="3142127534753379" type="Touch">
+                            <param id="0" name="Object">fbtn</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Log in" sid="5766987036626747" type="Facebook">
+                            <param id="0" name="Stream permission">1</param>
+                            <param id="1" name="Action permission">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4757729081256585">
+                    <conditions>
+                        <condition id="1" name="Is user logged in" sid="1927689896183456" type="Facebook" />
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Speak text" sid="2048277803097734" type="UserMedia">
+                            <param id="0" name="Text">&quot;Welcome,&quot; &amp; Facebook.FullName  &amp;&quot;. Have a good game!&quot;</param>
+                            <param id="1" name="Language">&quot;en-US&quot;</param>
+                            <param id="2" name="Voice URI">&quot;&quot;</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="4" name="Rate">1</param>
+                            <param id="5" name="Pitch">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2512218053674335" type="Welcometxt">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="6580961933126517" type="Username">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="8630558145663706" type="Username">
+                            <param id="0" name="Text">Facebook.FullName</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block any="1" sid="8232696017517219">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="7913761374558602" type="Keyboard">
+                    <param id="0" name="Key">73 (I)</param>
+                </condition>
+                <condition id="6" name="On object clicked" sid="1112611975157275" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">About</param>
+                </condition>
+                <condition id="3" name="On touched object" sid="5785193650065849" type="Touch">
+                    <param id="0" name="Object">About</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="50710753649864" type="System">
+                    <param id="0" name="Layout">About</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="271412034006029">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9639832777307992" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="3196427688326174" type="System">
+                    <param id="0" name="Seconds">20.0</param>
+                </action>
+                <action behavior="Car" id="8" name="Set enabled" sid="3385765217855712" type="Car">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Car" id="3" name="Set speed" sid="9226756267938961" type="Car">
+                    <param id="0" name="Speed">400</param>
+                </action>
+                <action behavior="Car" id="6" name="Set deceleration" sid="748685652313452" type="Car">
+                    <param id="0" name="Deceleration">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="1843362076525024" type="System">
+                    <param id="0" name="Layout">Demo</param>
+                </action>
+                <action id="-16" name="Wait" sid="5137416976462733" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

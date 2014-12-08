@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+	<string id='world'>Mundo</string>
+	<string id='level'>Etapa</string>
+	<string id='begin'>Presione 'Enter' para comenzar.</string>
+</strings>
