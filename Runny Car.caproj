@@ -2,7 +2,7 @@
 <c2project>
     <name>Runny Car</name>
     <description>O carro corre sem parar, e você apenas precisa movimentá-lo para a esquerda e direita. Tente, se puder! Seu carro corre sem parar, e nesse trajeto você deve desviar de objetos. Tudo deve ser feito no momento certo. Precisão, cálculos e estratégia são a chave.</description>
-    <version>1.9.7</version>
+    <version>1.9.8</version>
     <author>Daniell Mesquita</author>
     <author-email>daniellplasma@gmail.com</author-email>
     <author-website></author-website>
@@ -240,7 +240,7 @@
         </object-type>
         <object-type name="TiledBackground2" sid="8089392289784943">
             <plugin id="TiledBg" />
-            <texture />
+            <texture original-source="C:\Users\Daniell\Desktop\bg.png" />
         </object-type>
         <object-type name="RC" sid="5630727341319532">
             <plugin id="Sprite" />
@@ -504,7 +504,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="5" repeatto="0" sid="8719759918587341" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" original-source="C:\Users\Daniell\Desktop\0.png">
                         <collision-poly>
                             <point x="0.133333" y="0.135593" />
                             <point x="0.5" y="0" />
@@ -516,10 +516,32 @@
                             <point x="0" y="0.491525" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" original-source="C:\Users\Daniell\Desktop\1.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.152542" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.152542" />
+                            <point x="1" y="0.491525" />
+                            <point x="0.85" y="0.847458" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.847458" />
+                            <point x="0" y="0.491525" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="1" loop="0" name="Guttye" pingpong="0" repeatcount="1" repeatto="0" sid="6210663064119328" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" original-source="C:\Users\Daniell\Desktop\0.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.152542" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.152542" />
+                            <point x="1" y="0.491525" />
+                            <point x="0.85" y="0.847458" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.847458" />
+                            <point x="0" y="0.491525" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -527,7 +549,18 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3954529474241651" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" original-source="C:\Users\Daniell\Desktop\0.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.152542" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.152542" />
+                            <point x="1" y="0.491525" />
+                            <point x="0.85" y="0.847458" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.847458" />
+                            <point x="0" y="0.491525" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -535,7 +568,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2959453534489022" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" original-source="C:\Users\Daniell\Desktop\0.png">
                         <collision-poly>
                             <point x="0.133333" y="0.135593" />
                             <point x="0.5" y="0" />
@@ -554,7 +587,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6088945888826896" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" original-source="C:\Users\Daniell\Desktop\g.png">
                         <collision-poly>
                             <point x="0.133333" y="0.135593" />
                             <point x="0.5" y="0" />
@@ -573,7 +606,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6343629192584971" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" original-source="C:\Users\Daniell\Desktop\g.png">
                         <collision-poly>
                             <point x="0.133333" y="0.135593" />
                             <point x="0.5" y="0" />
