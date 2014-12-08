@@ -4,6 +4,21 @@
     <name>About sheet</name>
     <events>
         <variable constant="0" name="language" sid="3838893400803398" static="0" type="text">en</variable>
+        <event-block sid="5427515223714728">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="377001573111956" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8299094483975542" type="System">
+                    <param id="0" name="Variable">language</param>
+                    <param id="1" name="Value">Webstorage.localvalue(&quot;Language&quot;)</param>
+                </action>
+                <action id="0" name="Set local value" sid="4238613755438169" type="WebStorage">
+                    <param id="0" name="Key">&quot;Language&quot;</param>
+                    <param id="1" name="Value">&quot;en&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" sid="2397998118213725" title="Language">
             <sub-events>
                 <event-group description="" sid="1229614064789811" title="Flags">
@@ -251,11 +266,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="5427515223714728">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="377001573111956" type="System" />
-            </conditions>
-            <actions />
-        </event-block>
     </events>
 </c2eventsheet>
