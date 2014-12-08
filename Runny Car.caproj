@@ -2,7 +2,7 @@
 <c2project>
     <name>Runny Car</name>
     <description>O carro corre sem parar, e você apenas precisa movimentá-lo para a esquerda e direita. Tente, se puder! Seu carro corre sem parar, e nesse trajeto você deve desviar de objetos. Tudo deve ser feito no momento certo. Precisão, cálculos e estratégia são a chave.</description>
-    <version>1.9.6</version>
+    <version>1.9.7</version>
     <author>Daniell Mesquita</author>
     <author-email>daniellplasma@gmail.com</author-email>
     <author-website></author-website>
@@ -241,15 +241,6 @@
         <object-type name="TiledBackground2" sid="8089392289784943">
             <plugin id="TiledBg" />
             <texture />
-        </object-type>
-        <object-type name="GamlrLogo" sid="4305665706511884">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="CopyrightText" sid="5680433373438554">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="CopyrightText2" sid="7928015602365226">
-            <plugin id="Text" />
         </object-type>
         <object-type name="RC" sid="5630727341319532">
             <plugin id="Sprite" />
@@ -508,6 +499,94 @@
         </object-type>
         <object-type name="DriveTutoTxt" sid="9107941126341742">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="G" sid="2566508193222343">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="5" repeatto="0" sid="8719759918587341" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475">
+                        <collision-poly>
+                            <point x="0.133333" y="0.135593" />
+                            <point x="0.5" y="0" />
+                            <point x="0.866667" y="0.135593" />
+                            <point x="1" y="0.491525" />
+                            <point x="0.866667" y="0.864407" />
+                            <point x="0.5" y="1" />
+                            <point x="0.133333" y="0.864407" />
+                            <point x="0" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" />
+                </animation>
+                <animation framecount="1" loop="0" name="Guttye" pingpong="0" repeatcount="1" repeatto="0" sid="6210663064119328" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="A" sid="2112068517848306">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3954529474241651" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="M" sid="3269707737034874">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2959453534489022" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475">
+                        <collision-poly>
+                            <point x="0.133333" y="0.135593" />
+                            <point x="0.5" y="0" />
+                            <point x="0.866667" y="0.135593" />
+                            <point x="1" y="0.491525" />
+                            <point x="0.866667" y="0.864407" />
+                            <point x="0.5" y="1" />
+                            <point x="0.133333" y="0.864407" />
+                            <point x="0" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="L" sid="2129398017840121">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6088945888826896" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475">
+                        <collision-poly>
+                            <point x="0.133333" y="0.135593" />
+                            <point x="0.5" y="0" />
+                            <point x="0.866667" y="0.135593" />
+                            <point x="1" y="0.491525" />
+                            <point x="0.866667" y="0.864407" />
+                            <point x="0.5" y="1" />
+                            <point x="0.133333" y="0.864407" />
+                            <point x="0" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="R" sid="848255959856856">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6343629192584971" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508475">
+                        <collision-poly>
+                            <point x="0.133333" y="0.135593" />
+                            <point x="0.5" y="0" />
+                            <point x="0.866667" y="0.135593" />
+                            <point x="1" y="0.491525" />
+                            <point x="0.866667" y="0.864407" />
+                            <point x="0.5" y="1" />
+                            <point x="0.133333" y="0.864407" />
+                            <point x="0" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

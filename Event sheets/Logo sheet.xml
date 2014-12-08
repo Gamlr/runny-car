@@ -3,43 +3,68 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Logo sheet</name>
     <events>
-        <event-block sid="2584854509924084">
+        <event-block sid="9548281481461188">
             <conditions>
-                <condition id="-2" name="On start of layout" sid="4741872167591189" type="System" />
+                <condition id="-2" name="On start of layout" sid="6830705663429024" type="System" />
             </conditions>
             <actions>
-                <action id="-15" name="Set visible" sid="3368523616491572" type="GamlrLogo">
+                <action id="-15" name="Set visible" sid="1127711153003384" type="A">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="9205447172095889" type="CopyrightText">
+                <action id="-15" name="Set visible" sid="2947894414646748" type="M">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="165546142795472" type="CopyrightText2">
+                <action id="-15" name="Set visible" sid="6162043603731347" type="L">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-16" name="Wait" sid="426960057759566" type="System">
-                    <param id="0" name="Seconds">1.0</param>
+                <action id="-15" name="Set visible" sid="8584858916041655" type="R">
+                    <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="3484881005161488" type="GamlrLogo">
-                    <param id="0" name="Visibility">1</param>
+            </actions>
+        </event-block>
+        <event-block sid="4290810080784886">
+            <conditions>
+                <condition id="4" name="On finished" sid="543739122269814" type="G">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1464450141282664" type="G">
+                    <param id="0" name="Animation">&quot;Guttye&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
-                <action id="-16" name="Wait" sid="3812255621603659" type="System">
-                    <param id="0" name="Seconds">2.0</param>
+                <action id="-1" name="Set X" sid="6664155958998382" type="G">
+                    <param id="0" name="X">200</param>
                 </action>
-                <action id="-15" name="Set visible" sid="3608334830504431" type="CopyrightText">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="6905251699212259" type="System">
+                <action id="-16" name="Wait" sid="3095751337762403" type="System">
                     <param id="0" name="Seconds">0.5</param>
                 </action>
-                <action id="-15" name="Set visible" sid="9551786913919655" type="CopyrightText2">
+                <action id="-15" name="Set visible" sid="6315438257483831" type="A">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action id="-16" name="Wait" sid="364330505469189" type="System">
-                    <param id="0" name="Seconds">3.0</param>
+                <action id="-16" name="Wait" sid="4599627206399707" type="System">
+                    <param id="0" name="Seconds">0.5</param>
                 </action>
-                <action id="-2" name="Go to layout" sid="7659732816344983" type="System">
-                    <param id="0" name="Layout">Start</param>
+                <action id="-15" name="Set visible" sid="9748882437658241" type="M">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="4549929438565048" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1876709395521804" type="L">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="7079450569449012" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-15" name="Set visible" sid="3467411349928889" type="R">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="6226473985427809" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="6500911163389252" type="System">
+                    <param id="0" name="Layout">&quot;Start&quot;</param>
                 </action>
             </actions>
         </event-block>

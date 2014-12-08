@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout>Start</layout>
-        <layout>Logo</layout>
-        <layout active="1">How</layout>
+        <layout active="1">Logo</layout>
+        <layout>How</layout>
         <layout>About</layout>
         <event-sheet>Start sheet</event-sheet>
         <event-sheet>How sheet</event-sheet>
@@ -27,7 +27,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
-        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -56,5 +56,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Semaforo/" />
         <folder expanded="1" path="animation-folder/flag/" />
         <folder expanded="1" path="animation-folder/outline/" />
+        <folder expanded="1" path="animation-folder/G/" />
+        <folder expanded="1" path="animation-folder/A/" />
+        <folder expanded="1" path="animation-folder/M/" />
+        <folder expanded="1" path="animation-folder/L/" />
+        <folder expanded="1" path="animation-folder/R/" />
     </folders-expanded>
 </c2uistate>
