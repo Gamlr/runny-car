@@ -2,7 +2,7 @@
 <c2project>
     <name>Runny Car</name>
     <description>O carro corre sem parar, e você apenas precisa movimentá-lo para a esquerda e direita. Tente, se puder! Seu carro corre sem parar, e nesse trajeto você deve desviar de objetos. Tudo deve ser feito no momento certo. Precisão, cálculos e estratégia são a chave.</description>
-    <version>1.9.5</version>
+    <version>1.9.6</version>
     <author>Daniell Mesquita</author>
     <author-email>daniellplasma@gmail.com</author-email>
     <author-website></author-website>
@@ -502,6 +502,12 @@
         </object-type>
         <object-type global="1" name="XML" sid="8238330906051151">
             <plugin id="XML" />
+        </object-type>
+        <object-type name="StartTutoTxt" sid="8077393693746513">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="DriveTutoTxt" sid="9107941126341742">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

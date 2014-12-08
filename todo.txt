@@ -1,2 +1,3 @@
 Suas preferências de "Idiomas" foram armazenadas em seu savegame.
 Remover o irrelevante global value de language
+Novos idiomas
