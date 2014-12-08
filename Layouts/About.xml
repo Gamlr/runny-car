@@ -160,7 +160,7 @@
                 </instance>
                 <instance type="CreatedTxt" uid="94">
                     <properties>
-                        <text>Created in 17/03/14</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Pokemon DPPt,-32,400,0</font>
                         <color>255,255,255</color>
@@ -187,7 +187,7 @@
                 </instance>
                 <instance type="HPT" uid="59">
                     <properties>
-                        <text>How to play</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-32,400,0</font>
                         <color>255,255,255</color>
@@ -214,7 +214,7 @@
                 </instance>
                 <instance type="AuthorTxt" uid="93">
                     <properties>
-                        <text>Game created by Daniell Mesquita, CEO of Gamlr</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Pokemon DPPt,-32,400,0</font>
                         <color>255,255,255</color>
@@ -241,7 +241,7 @@
                 </instance>
                 <instance type="AboutTxt" uid="58">
                     <properties>
-                        <text>About</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Pokemon DPPt,-32,400,0</font>
                         <color>255,255,255</color>
