@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout>Start</layout>
-        <layout>How</layout>
-        <layout active="1">About</layout>
+        <layout active="1">How</layout>
+        <layout>About</layout>
         <layout>Settings</layout>
         <layout>Logo</layout>
         <event-sheet>Start sheet</event-sheet>
