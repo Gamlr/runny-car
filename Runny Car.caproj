@@ -2,7 +2,7 @@
 <c2project>
     <name>Runny Car</name>
     <description>O carro corre sem parar, e você apenas precisa movimentá-lo para a esquerda e direita. Tente, se puder! Seu carro corre sem parar, e nesse trajeto você deve desviar de objetos. Tudo deve ser feito no momento certo. Precisão, cálculos e estratégia são a chave.</description>
-    <version>1.9.8</version>
+    <version>1.9.9</version>
     <author>Daniell Mesquita</author>
     <author-email>daniellplasma@gmail.com</author-email>
     <author-website></author-website>
@@ -47,7 +47,7 @@
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
     <first-layout>Logo</first-layout>
-    <use-loader-layout>0</use-loader-layout>
+    <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Fullscreen in browser">Scale outer</prop>
         <prop name="Orientations">Landscape</prop>
@@ -631,6 +631,7 @@
         <layout>Layout 10.xml</layout>
         <layout>Layout 11.xml</layout>
         <layout>Demo.xml</layout>
+        <layout>Settings.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 10.xml</event-sheet>
@@ -640,6 +641,7 @@
         <event-sheet>How sheet.xml</event-sheet>
         <event-sheet>Event sheet 11.xml</event-sheet>
         <event-sheet>Demo sheet.xml</event-sheet>
+        <event-sheet>Settings sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="8" />
