@@ -191,8 +191,8 @@
                         <initial-visibility>Visible</initial-visibility>
                         <font>Pokemon DPPt,-32,400,0</font>
                         <color>255,255,255</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
@@ -201,10 +201,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>26</x>
-                        <y>554</y>
+                        <y>545</y>
                         <z>0</z>
                         <width>752</width>
-                        <height>65</height>
+                        <height>51</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
