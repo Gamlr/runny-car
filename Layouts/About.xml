@@ -277,7 +277,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>710</x>
+                        <x>677.749938965</x>
                         <y>24</y>
                         <z>0</z>
                         <width>30</width>
@@ -374,7 +374,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>678.250671387</x>
+                        <x>709.250671387</x>
                         <y>24.000013351</y>
                         <z>0</z>
                         <width>30</width>
