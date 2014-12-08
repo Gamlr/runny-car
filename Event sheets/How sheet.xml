@@ -25,122 +25,6 @@
         </event-block>
         <event-group description="" sid="2728570623447273" title="Language2">
             <sub-events>
-                <event-group description="" sid="1229614064789811" title="Flags2">
-                    <sub-events>
-                        <event-block sid="8935164673900865">
-                            <conditions>
-                                <condition id="-2" name="On start of layout" sid="2919325989509681" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="4" name="Set animation" sid="655319781468493" type="flag">
-                                    <param id="0" name="Animation">self.language</param>
-                                    <param id="1" name="From">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>highlight current language</comment>
-                        <event-block sid="2250384010984733">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="3102994128861932" type="flag">
-                                    <param id="0" name="Instance variable">language</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">language</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Set opacity" sid="1274679363524085" type="flag">
-                                    <param id="0" name="Opacity">100</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="1700610261816398">
-                            <conditions>
-                                <condition id="-7" inverted="1" name="Compare instance variable" sid="6079029011040288" type="flag">
-                                    <param id="0" name="Instance variable">language</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">language</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-16" name="Set opacity" sid="5632481892505603" type="flag">
-                                    <param id="0" name="Opacity">30</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>on click change the language</comment>
-                        <event-block sid="8530019437947043">
-                            <conditions>
-                                <condition id="6" name="On object clicked" sid="9286646619740957" type="Mouse">
-                                    <param id="0" name="Mouse button">0</param>
-                                    <param id="1" name="Click type">0</param>
-                                    <param id="2" name="Object clicked">flag</param>
-                                </condition>
-                                <condition id="-7" inverted="1" name="Compare instance variable" sid="9620764695695945" type="flag">
-                                    <param id="0" name="Instance variable">language</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">language</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Call function" sid="2366243116406267" type="f">
-                                    <param id="0" name="Name">&quot;changeLanguage&quot;</param>
-                                    <param id="1" name="Parameter {n}">flag.language</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>mouseover highlight</comment>
-                        <event-block sid="1650238223152752">
-                            <conditions>
-                                <condition id="7" name="Cursor is over object" sid="7208717458771269" type="Mouse">
-                                    <param id="0" name="Object">flag</param>
-                                </condition>
-                                <condition id="-7" inverted="1" name="Compare instance variable" sid="1420993622479116" type="flag">
-                                    <param id="0" name="Instance variable">language</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">language</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-4" name="Set position to another object" sid="9876244263482937" type="outline">
-                                    <param id="0" name="Object">flag</param>
-                                    <param id="1" name="Image point (optional)">0</param>
-                                </action>
-                                <action id="-15" name="Set visible" sid="8350261765041341" type="outline">
-                                    <param id="0" name="Visibility">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="586854939464831">
-                            <conditions>
-                                <condition id="-22" name="Else" sid="1423579213675604" type="System" />
-                            </conditions>
-                            <actions>
-                                <action id="-15" name="Set visible" sid="5283184216451517" type="outline">
-                                    <param id="0" name="Visibility">0</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-group>
-                <comment>the &quot;changeLanguage&quot; function requests the appropriate language file</comment>
-                <event-block sid="7823724658207554">
-                    <conditions>
-                        <condition id="0" name="On function" sid="5402241690939867" type="f">
-                            <param id="0" name="Name">&quot;changeLanguage&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="8924906102786532" type="System">
-                            <param id="0" name="Variable">language</param>
-                            <param id="1" name="Value">f.Param(0)</param>
-                        </action>
-                        <action id="0" name="Request URL" sid="9479012041320897" type="AJAX">
-                            <param id="0" name="Tag">&quot;loadLanguageFile&quot;</param>
-                            <param id="1" name="URL">&quot;strings.&quot; &amp; language &amp; &quot;.xml&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <comment>load file into an XML object and call the &quot;updateText&quot; function</comment>
                 <event-block sid="2218898336694187">
                     <conditions>
                         <condition id="0" name="On completed" sid="9735434221406154" type="AJAX">
@@ -161,7 +45,6 @@
                         </action>
                     </actions>
                 </event-block>
-                <comment>the &quot;updateText&quot; function changes the text in all textboxes &#x0D;&#x0A;and changes the animation of any sprites that have text</comment>
                 <event-block sid="5039463374874426">
                     <conditions>
                         <condition id="0" name="On function" sid="7038568413680509" type="f">
@@ -179,11 +62,7 @@
                             <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;drivethecar&quot;)</param>
                         </action>
                     </actions>
-                    <sub-events>
-                        <comment>if you had many sprites that need to change you might put them into a family</comment>
-                    </sub-events>
                 </event-block>
-                <comment>the &quot;getText&quot; function takes the string id as a parameter and returns the correct string from the XML file</comment>
                 <event-block sid="1029767389110483">
                     <conditions>
                         <condition id="0" name="On function" sid="6835148960053251" type="f">

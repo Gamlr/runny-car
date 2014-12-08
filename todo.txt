@@ -2,3 +2,5 @@ Suas preferências de "Idiomas" foram armazenadas em seu savegame.
 Remover o irrelevante global value de language
 Novos idiomas
 Menos objetos: mais animações e UIDs
+Ano do jogo na tela logo apos ter concludo a animaçao
+Layout unico para todas as fases. Criaçao de novos objetos e rotaçoes dos mesmos
