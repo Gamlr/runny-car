@@ -43,7 +43,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="9581223860367202" type="HPT">
+                        <action id="0" name="Set text" sid="9581223860367202" type="HeadingTxt">
                             <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;howplay&quot;)</param>
                         </action>
                         <action id="0" name="Set text" sid="8390260692077343" type="StartTutoTxt">

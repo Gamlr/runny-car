@@ -2,6 +2,7 @@
 <strings>
 	<string id='about'>약</string>
 	<string id='created'>03.17.14에 작성된</string>
+	<string id='settings'>설정</string>
 	<string id='howplay'>게임 방법</string>
 	<string id='starthegame'>게임을 시작</string>
 	<string id='drivethecar'>자동차를 운전</string>

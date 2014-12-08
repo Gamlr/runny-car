@@ -6,3 +6,4 @@ Ano do jogo na tela logo apos ter concludo a animaçao
 Layout unico para todas as fases. Criaçao de novos objetos e rotaçoes dos mesmos
 Fontes no proprio projeto
 Minificaçao das strings de idiomas
+Tutorial first welcome
