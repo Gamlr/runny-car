@@ -2,7 +2,7 @@
 <c2project>
     <name>Runny Car</name>
     <description>O carro corre sem parar, e você apenas precisa movimentá-lo para a esquerda e direita. Tente, se puder! Seu carro corre sem parar, e nesse trajeto você deve desviar de objetos. Tudo deve ser feito no momento certo. Precisão, cálculos e estratégia são a chave.</description>
-    <version>2.1.2</version>
+    <version>2.1.3</version>
     <author>Daniell Mesquita</author>
     <author-email>daniellplasma@gmail.com</author-email>
     <author-website></author-website>
@@ -487,6 +487,9 @@
                 <animation framecount="1" loop="0" name="kr" pingpong="0" repeatcount="1" repeatto="0" sid="5696437466494382" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.515152" original-source="C:\Users\Daniell\Desktop\kr.GIF" />
                 </animation>
+                <animation framecount="1" loop="0" name="jp" pingpong="0" repeatcount="1" repeatto="0" sid="1021423122531486" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.515152" original-source="C:\Users\Daniell\Desktop\jp.GIF" />
+                </animation>
             </animation-folder>
         </object-type>
         <object-type name="outline" sid="9350456857056383">
@@ -705,5 +708,6 @@
         <file name="strings.br.xml" />
         <file name="strings.it.xml" />
         <file name="strings.kr.xml" />
+        <file name="strings.jp.xml" />
     </files-folder>
 </c2project>
