@@ -200,10 +200,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>26</x>
+                        <x>0</x>
                         <y>545</y>
                         <z>0</z>
-                        <width>752</width>
+                        <width>797</width>
                         <height>51</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
