@@ -99,9 +99,6 @@
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">arrowleft</param>
                         </condition>
-                        <condition id="3" name="On touched object" sid="7935096432922728" type="Touch">
-                            <param id="0" name="Object">arrowleft</param>
-                        </condition>
                         <condition id="6" name="On button pressed" sid="9912010274003557" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
                             <param id="1" name="Button">9</param>
@@ -123,9 +120,6 @@
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">HPT</param>
-                        </condition>
-                        <condition id="3" name="On touched object" sid="3327351239050778" type="Touch">
-                            <param id="0" name="Object">HPT</param>
                         </condition>
                         <condition id="0" name="On key pressed" sid="8208075834424987" type="Keyboard">
                             <param id="0" name="Key">13 (Return)</param>
@@ -151,9 +145,6 @@
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">ST</param>
-                        </condition>
-                        <condition id="3" name="On touched object" sid="3155444538166372" type="Touch">
-                            <param id="0" name="Object">ST</param>
                         </condition>
                         <condition id="0" name="On key pressed" sid="915556108480666" type="Keyboard">
                             <param id="0" name="Key">32 (Space)</param>

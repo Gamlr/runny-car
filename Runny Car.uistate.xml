@@ -43,9 +43,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Rank/" />
         <folder expanded="1" path="animation-folder/1pt/" />
         <folder expanded="1" path="animation-folder/2pt/" />
-        <folder expanded="1" path="animation-folder/GoLeft/" />
-        <folder expanded="1" path="animation-folder/GoRight/" />
-        <folder expanded="1" path="animation-folder/Startouch/" />
         <folder expanded="1" path="animation-folder/RC/" />
         <folder expanded="1" path="animation-folder/PS/" />
         <folder expanded="1" path="animation-folder/Ranking/" />

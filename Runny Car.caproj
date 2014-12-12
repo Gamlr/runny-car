@@ -2,7 +2,7 @@
 <c2project>
     <name>Runny Car</name>
     <description>O carro corre sem parar, e você apenas precisa movimentá-lo para a esquerda e direita. Tente, se puder! Seu carro corre sem parar, e nesse trajeto você deve desviar de objetos. Tudo deve ser feito no momento certo. Precisão, cálculos e estratégia são a chave.</description>
-    <version>2.3.5</version>
+    <version>2.3.6</version>
     <author>Daniell Mesquita</author>
     <author-email>daniellplasma@gmail.com</author-email>
     <author-website></author-website>
@@ -19,7 +19,6 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
-        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Scirra" id="UserMedia" version="1">User Media</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
         <plugin author="Scirra" id="XML" version="1">XML</plugin>
@@ -104,9 +103,6 @@
         </object-type>
         <object-type name="Mouse" sid="1058050869338865">
             <plugin id="Mouse" />
-        </object-type>
-        <object-type name="Touch" sid="8123975864566025">
-            <plugin id="Touch" />
         </object-type>
         <object-type name="TiledBackground" sid="1317218293233976">
             <plugin id="TiledBg" />
@@ -196,30 +192,6 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7993254270254344" speed="5">
-                    <frame duration="1" hotspotX="0.500782" hotspotY="0.500978" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="GoLeft" sid="1904951131168074">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5606656738830233" speed="5">
-                    <frame duration="1" hotspotX="1" hotspotY="1" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="GoRight" sid="3540866816405485">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="817023165995005" speed="5">
-                    <frame duration="1" hotspotX="1" hotspotY="1" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Startouch" sid="6465667098982192">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2018435072309654" speed="5">
                     <frame duration="1" hotspotX="0.500782" hotspotY="0.500978" />
                 </animation>
             </animation-folder>
@@ -652,11 +624,6 @@
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="8" />
-        <global-instance type="Touch" uid="11">
-            <properties>
-                <use-mouse-input>No</use-mouse-input>
-            </properties>
-        </global-instance>
         <global-instance type="Keyboard" uid="9" />
         <global-instance type="Gamepad" uid="10">
             <properties>

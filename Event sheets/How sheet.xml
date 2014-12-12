@@ -81,9 +81,6 @@
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">arrowleft</param>
                 </condition>
-                <condition id="3" name="On touched object" sid="614689339710602" type="Touch">
-                    <param id="0" name="Object">arrowleft</param>
-                </condition>
             </conditions>
             <actions>
                 <action id="-43" name="Go to next/previous layout" sid="4021552162137526" type="System">

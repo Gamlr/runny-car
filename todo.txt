@@ -13,3 +13,4 @@ Speeh text for other languages beyond english
 Integration with Peeper Games API
 Todos os melhores idiomas e modo futebol na versão 2
 Issues: bug ao passar de fase, highscores, ao atualizar linguagem, e ao passar 20 segundos na tela inicial
+fix error that need semaforo

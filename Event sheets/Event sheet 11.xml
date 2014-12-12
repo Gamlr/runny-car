@@ -32,10 +32,6 @@
                     <param id="0" name="Mode">0</param>
                     <param id="1" name="Effect">&quot;Overlay&quot;</param>
                 </action>
-                <action id="-3" name="Set position" sid="5867746006456171" type="Startouch">
-                    <param id="0" name="X">640.501</param>
-                    <param id="1" name="Y">511</param>
-                </action>
                 <action id="-27" name="Set effect enabled" sid="6006363215726926" type="Car">
                     <param id="0" name="Mode">1</param>
                     <param id="1" name="Effect">&quot;Overlay&quot;</param>
@@ -85,13 +81,8 @@
                     </actions>
                 </event-block>
                 <event-block sid="9942039364076435">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="7065808220317223" type="Touch">
-                            <param id="0" name="Object">Startouch</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
-                        <action id="-9" name="Destroy" sid="1114724801256351" type="Startouch" />
                         <action id="-16" name="Wait" sid="5116930114526581" type="System">
                             <param id="0" name="Seconds">0.5</param>
                         </action>
@@ -103,14 +94,6 @@
                         </action>
                         <action behavior="Car" id="6" name="Set deceleration" sid="5034295027357529" type="Car">
                             <param id="0" name="Deceleration">0</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="592515784714339" type="GoLeft">
-                            <param id="0" name="X">399</param>
-                            <param id="1" name="Y">600</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="6290392853960749" type="GoRight">
-                            <param id="0" name="X">800</param>
-                            <param id="1" name="Y">800</param>
                         </action>
                         <action id="-3" name="Set position" sid="7454196299346145" type="ScoreTxt">
                             <param id="0" name="X">394</param>
@@ -209,11 +192,7 @@
                     </actions>
                 </event-block>
                 <event-block sid="9784689077555076">
-                    <conditions>
-                        <condition id="4" name="Is touching object" sid="301955760854238" type="Touch">
-                            <param id="0" name="Object">GoLeft</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action behavior="Car" id="7" name="Simulate control" sid="4599544743770609" type="Car">
                             <param id="0" name="Control">0</param>
@@ -221,11 +200,7 @@
                     </actions>
                 </event-block>
                 <event-block sid="2164890121134283">
-                    <conditions>
-                        <condition id="4" name="Is touching object" sid="5425102034753832" type="Touch">
-                            <param id="0" name="Object">GoRight</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action behavior="Car" id="7" name="Simulate control" sid="7851723634123822" type="Car">
                             <param id="0" name="Control">1</param>
@@ -317,8 +292,6 @@
                             <param id="0" name="X">376</param>
                             <param id="1" name="Y">324</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="1248126019838431" type="GoLeft" />
-                        <action id="-9" name="Destroy" sid="2124328633036346" type="GoRight" />
                         <action id="-9" name="Destroy" sid="768633429143163" type="ScoreTxt" />
                     </actions>
                 </event-block>
@@ -339,11 +312,7 @@
                     </actions>
                 </event-block>
                 <event-block sid="3602011121601021">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="8996420776544416" type="Touch">
-                            <param id="0" name="Object">Play</param>
-                        </condition>
-                    </conditions>
+                    <conditions />
                     <actions>
                         <action id="-9" name="Set value" sid="853262446978421" type="System">
                             <param id="0" name="Variable">score</param>

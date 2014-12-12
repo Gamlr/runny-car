@@ -203,9 +203,6 @@
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">arrowleft</param>
                         </condition>
-                        <condition id="3" name="On touched object" sid="7935096432922728" type="Touch">
-                            <param id="0" name="Object">arrowleft</param>
-                        </condition>
                         <condition id="6" name="On button pressed" sid="9912010274003557" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
                             <param id="1" name="Button">9</param>

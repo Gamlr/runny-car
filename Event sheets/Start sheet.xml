@@ -36,9 +36,6 @@
                             <param id="0" name="Gamepad">0</param>
                             <param id="1" name="Button">9</param>
                         </condition>
-                        <condition id="3" name="On touched object" sid="2495737376216286" type="Touch">
-                            <param id="0" name="Object">PS</param>
-                        </condition>
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="5525964749082553" type="System">
@@ -59,9 +56,6 @@
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">fbtn</param>
-                        </condition>
-                        <condition id="3" name="On touched object" sid="3142127534753379" type="Touch">
-                            <param id="0" name="Object">fbtn</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -88,9 +82,6 @@
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">About</param>
-                </condition>
-                <condition id="3" name="On touched object" sid="5785193650065849" type="Touch">
-                    <param id="0" name="Object">About</param>
                 </condition>
             </conditions>
             <actions>
