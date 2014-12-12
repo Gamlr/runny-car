@@ -2,7 +2,7 @@
 <c2project>
     <name>Runny Car</name>
     <description>O carro corre sem parar, e você apenas precisa movimentá-lo para a esquerda e direita. Tente, se puder! Seu carro corre sem parar, e nesse trajeto você deve desviar de objetos. Tudo deve ser feito no momento certo. Precisão, cálculos e estratégia são a chave.</description>
-    <version>2.3.6</version>
+    <version>2.3.7</version>
     <author>Daniell Mesquita</author>
     <author-email>daniellplasma@gmail.com</author-email>
     <author-website></author-website>
@@ -373,32 +373,6 @@
         </object-type>
         <object-type name="MiniTxt" sid="3559531323508563">
             <plugin id="Text" />
-        </object-type>
-        <object-type name="Semaforo" sid="2539983885086261">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="6384375623913939" speed="1">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.506173">
-                        <collision-poly>
-                            <point x="0.0178571" y="0.0617284" />
-                            <point x="0.5" y="0" />
-                            <point x="0.982143" y="0.0617284" />
-                            <point x="1" y="0.493827" />
-                            <point x="0.982143" y="0.938272" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0178571" y="0.938272" />
-                            <point x="0" y="0.493827" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="5" loop="0" name="Animation" pingpong="0" repeatcount="0" repeatto="0" sid="4501584405590007" speed="1">
-                    <frame duration="0.5" hotspotX="0.5" hotspotY="0.506173" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.506173" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.506173" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.506173" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.506173" />
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="WebStorage" sid="9750502735349818">
             <plugin id="WebStorage" />

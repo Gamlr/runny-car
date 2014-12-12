@@ -52,7 +52,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/arrowleft/" />
         <folder expanded="1" path="animation-folder/start/" />
         <folder expanded="1" path="animation-folder/drive/" />
-        <folder expanded="1" path="animation-folder/Semaforo/" />
         <folder expanded="1" path="animation-folder/flag/" />
         <folder expanded="1" path="animation-folder/outline/" />
         <folder expanded="1" path="animation-folder/G/" />

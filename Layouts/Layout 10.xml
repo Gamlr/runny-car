@@ -656,28 +656,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Semaforo" uid="88">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-224</x>
-                        <y>464</y>
-                        <z>0</z>
-                        <width>280</width>
-                        <height>81</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.506172836</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="HighTxt" uid="96">
                     <properties>
                         <text>Text</text>

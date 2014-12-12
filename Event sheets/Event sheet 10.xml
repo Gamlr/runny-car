@@ -65,18 +65,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="3477769558060378" type="Semaforo">
-                            <param id="0" name="X">164</param>
-                            <param id="1" name="Y">438</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="7406728989581685" type="Semaforo">
-                            <param id="0" name="Animation">&quot;Animation&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="2635223972390348" type="System">
-                            <param id="0" name="Seconds">3.8</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="5212234490091417" type="Semaforo" />
                         <action behavior="Car" id="8" name="Set enabled" sid="8190664828096785" type="Car">
                             <param id="0" name="State">1</param>
                         </action>
