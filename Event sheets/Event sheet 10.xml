@@ -140,56 +140,14 @@
         </event-group>
         <event-group description="" sid="2309828157769498" title="Drive the car">
             <sub-events>
-                <event-block sid="6166660962201117">
+                <event-block any="1" sid="6166660962201117">
                     <conditions>
                         <condition id="2" name="Key is down" sid="9376165950274958" type="Keyboard">
                             <param id="0" name="Key">65 (A)</param>
                         </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Car" id="7" name="Simulate control" sid="9941866801008299" type="Car">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="3149603978121555">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="3440463003700232" type="Keyboard">
-                            <param id="0" name="Key">68 (D)</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Car" id="7" name="Simulate control" sid="6993384439946507" type="Car">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="8582502998863753">
-                    <conditions>
                         <condition id="2" name="Mouse button is down" sid="1898589595769957" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                         </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Car" id="7" name="Simulate control" sid="2370881782720277" type="Car">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="9551932349406768">
-                    <conditions>
-                        <condition id="2" name="Mouse button is down" sid="3547586744573539" type="Mouse">
-                            <param id="0" name="Mouse button">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Car" id="7" name="Simulate control" sid="7201633201849189" type="Car">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block any="1" sid="7079226090212434">
-                    <conditions>
                         <condition id="3" name="Is button down" sid="8731216506457404" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
                             <param id="1" name="Button">14</param>
@@ -200,15 +158,24 @@
                             <param id="2" name="Comparison">2</param>
                             <param id="3" name="Value">-25</param>
                         </condition>
+                        <condition id="4" name="Is touching object" sid="301955760854238" type="Touch">
+                            <param id="0" name="Object">GoLeft</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Car" id="7" name="Simulate control" sid="667315637378743" type="Car">
+                        <action behavior="Car" id="7" name="Simulate control" sid="9941866801008299" type="Car">
                             <param id="0" name="Control">0</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block any="1" sid="8743759961151728">
+                <event-block any="1" sid="3149603978121555">
                     <conditions>
+                        <condition id="2" name="Key is down" sid="3440463003700232" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                        <condition id="2" name="Mouse button is down" sid="3547586744573539" type="Mouse">
+                            <param id="0" name="Mouse button">2</param>
+                        </condition>
                         <condition id="3" name="Is button down" sid="7236286976694301" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
                             <param id="1" name="Button">15</param>
@@ -219,33 +186,12 @@
                             <param id="2" name="Comparison">4</param>
                             <param id="3" name="Value">25</param>
                         </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Car" id="7" name="Simulate control" sid="6778256403407646" type="Car">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="9784689077555076">
-                    <conditions>
-                        <condition id="4" name="Is touching object" sid="301955760854238" type="Touch">
-                            <param id="0" name="Object">GoLeft</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Car" id="7" name="Simulate control" sid="4599544743770609" type="Car">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="2164890121134283">
-                    <conditions>
                         <condition id="4" name="Is touching object" sid="5425102034753832" type="Touch">
                             <param id="0" name="Object">GoRight</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Car" id="7" name="Simulate control" sid="7851723634123822" type="Car">
+                        <action behavior="Car" id="7" name="Simulate control" sid="6993384439946507" type="Car">
                             <param id="0" name="Control">1</param>
                         </action>
                     </actions>

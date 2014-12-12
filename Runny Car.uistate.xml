@@ -14,13 +14,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout>How</layout>
         <layout>About</layout>
         <layout>Settings</layout>
-        <layout active="1">Logo</layout>
+        <layout>Logo</layout>
         <event-sheet>Start sheet</event-sheet>
         <event-sheet>How sheet</event-sheet>
         <event-sheet>About sheet</event-sheet>
         <event-sheet>Logo sheet</event-sheet>
         <event-sheet>Settings sheet</event-sheet>
-        <event-sheet>Event sheet 10</event-sheet>
+        <event-sheet active="1">Event sheet 10</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
