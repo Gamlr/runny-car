@@ -11,7 +11,7 @@
             <actions>
                 <action id="6" name="Speak text" sid="9221069133996096" type="UserMedia">
                     <param id="0" name="Text">&quot;Reach 15 points to go to next level. 15 points!&quot;</param>
-                    <param id="1" name="Language">&quot;en-US&quot;</param>
+                    <param id="1" name="Language">Webstorage.localvalue(&quot;Language&quot;)</param>
                     <param id="2" name="Voice URI">&quot;&quot;</param>
                     <param id="3" name="Volume">40</param>
                     <param id="4" name="Rate">1</param>
