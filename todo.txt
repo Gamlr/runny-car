@@ -8,3 +8,5 @@ Fontes no proprio projeto
 Minificaçao das strings de idiomas
 Tutorial first welcome
 Modos: Aventura, instant action, corrida, tiro, (futebol no 2)
+Som "wi-oooon" quando o carro perde
+Hightscores
