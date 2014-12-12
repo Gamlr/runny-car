@@ -240,9 +240,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="9" name="Publish score" sid="3007783170220591" type="Facebook">
-                            <param id="0" name="Score">score</param>
-                        </action>
                         <action id="-2" name="Go to layout" sid="5916255069037797" type="System">
                             <param id="0" name="Layout">Layout 11</param>
                         </action>

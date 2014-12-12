@@ -64,34 +64,16 @@
                             <param id="0" name="Object">fbtn</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="2" name="Log in" sid="5766987036626747" type="Facebook">
-                            <param id="0" name="Stream permission">1</param>
-                            <param id="1" name="Action permission">1</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
                 <event-block sid="4757729081256585">
-                    <conditions>
-                        <condition id="1" name="Is user logged in" sid="1927689896183456" type="Facebook" />
-                    </conditions>
+                    <conditions />
                     <actions>
-                        <action id="6" name="Speak text" sid="2048277803097734" type="UserMedia">
-                            <param id="0" name="Text">&quot;Welcome,&quot; &amp; Facebook.FullName  &amp;&quot;. Have a good game!&quot;</param>
-                            <param id="1" name="Language">&quot;en-US&quot;</param>
-                            <param id="2" name="Voice URI">&quot;&quot;</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="4" name="Rate">1</param>
-                            <param id="5" name="Pitch">1</param>
-                        </action>
                         <action id="-15" name="Set visible" sid="2512218053674335" type="Welcometxt">
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-15" name="Set visible" sid="6580961933126517" type="Username">
                             <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="0" name="Set text" sid="8630558145663706" type="Username">
-                            <param id="0" name="Text">Facebook.FullName</param>
                         </action>
                     </actions>
                 </event-block>
