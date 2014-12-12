@@ -273,11 +273,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="11" name="Set live tile text" sid="6539150909553217" type="Windows8">
-                            <param id="0" name="Template">0</param>
-                            <param id="1" name="Text 1">&quot;Reached country scenary&quot;</param>
-                            <param id="2" name="Text 2">&quot;Passed level 10&quot;</param>
-                        </action>
                         <action id="-2" name="Go to layout" sid="5916255069037797" type="System">
                             <param id="0" name="Layout">Layout 11</param>
                         </action>

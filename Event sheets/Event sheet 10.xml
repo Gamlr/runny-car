@@ -240,11 +240,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="11" name="Set live tile text" sid="6539150909553217" type="Windows8">
-                            <param id="0" name="Template">0</param>
-                            <param id="1" name="Text 1">&quot;Reached country scenary&quot;</param>
-                            <param id="2" name="Text 2">&quot;Passed level 10&quot;</param>
-                        </action>
                         <action id="9" name="Publish score" sid="3007783170220591" type="Facebook">
                             <param id="0" name="Score">score</param>
                         </action>

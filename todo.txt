@@ -1,15 +1,14 @@
 Suas preferências de "Idiomas" foram armazenadas em seu savegame.
 Remover o irrelevante global value de language
-Novos idiomas
 Menos objetos: mais animações e UIDs
-Ano do jogo na tela logo apos ter concludo a animaçao
+Ano do jogo na tela logo apos ter concludo a animaçao (tela estilo Nintendo)
 Layout unico para todas as fases. Criaçao de novos objetos e rotaçoes dos mesmos
 Fontes no proprio projeto
 Minificaçao das strings de idiomas
 Tutorial first welcome
-Modos: Aventura, instant action, corrida, tiro, (futebol no 2)
+Modos: Aventura, instant action, corrida, tiro
 Som "wi-oooon" quando o carro perde
-Hightscores
 Todo in Github
-Speak text in choosen language (use new codes for languages)
+Speeh text for other languages beyond english
 Integration with Peeper Games API
+Todos os melhores idiomas e modo futebol na versão 2
