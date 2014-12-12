@@ -10,7 +10,7 @@
             <actions>
                 <action id="0" name="Request URL" sid="2814240220168438" type="AJAX">
                     <param id="0" name="Tag">&quot;loadLanguageFile&quot;</param>
-                    <param id="1" name="URL">&quot;strings.&quot; &amp; language &amp; &quot;.xml&quot;</param>
+                    <param id="1" name="URL">&quot;strings.&quot; &amp; Webstorage.localvalue(&quot;Language&quot;) &amp; &quot;.xml&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -29,10 +29,6 @@
                         <action id="0" name="Call function" sid="2068280566774226" type="f">
                             <param id="0" name="Name">&quot;updateText&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action id="0" name="Set local value" sid="7233612789791817" type="WebStorage">
-                            <param id="0" name="Key">&quot;Language&quot;</param>
-                            <param id="1" name="Value">language</param>
                         </action>
                     </actions>
                 </event-block>
