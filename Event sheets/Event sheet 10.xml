@@ -380,5 +380,15 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="2753536003570937">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="7043112516430884" type="System">
+                    <param id="0" name="First value">score</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
     </events>
 </c2eventsheet>
