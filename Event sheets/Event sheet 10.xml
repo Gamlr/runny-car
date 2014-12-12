@@ -51,10 +51,18 @@
         </event-block>
         <event-group description="" sid="942892426497406" title="Start the game">
             <sub-events>
-                <event-block sid="7443645024160699">
+                <event-block any="1" sid="7443645024160699">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="8048884535303504" type="Keyboard">
                             <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="0" name="On click" sid="1186033411347655" type="Mouse">
+                            <param id="0" name="Mouse button">1</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="872943479176359" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">9</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -66,8 +74,8 @@
                             <param id="0" name="Animation">&quot;Animation&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="-16" name="Wait" sid="6906221917108367" type="System">
-                            <param id="0" name="Seconds">3.0</param>
+                        <action id="-16" name="Wait" sid="2635223972390348" type="System">
+                            <param id="0" name="Seconds">3.8</param>
                         </action>
                         <action id="-9" name="Destroy" sid="5212234490091417" type="Semaforo" />
                         <action behavior="Car" id="8" name="Set enabled" sid="8190664828096785" type="Car">
@@ -80,76 +88,6 @@
                             <param id="0" name="Deceleration">0</param>
                         </action>
                         <action id="-3" name="Set position" sid="165780902848658" type="ScoreTxt">
-                            <param id="0" name="X">394</param>
-                            <param id="1" name="Y">50</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="6071812031757885">
-                    <conditions>
-                        <condition id="0" name="On click" sid="1186033411347655" type="Mouse">
-                            <param id="0" name="Mouse button">1</param>
-                            <param id="1" name="Click type">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="4540474652533527" type="Semaforo">
-                            <param id="0" name="X">164</param>
-                            <param id="1" name="Y">438</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="4295484681898133" type="Semaforo">
-                            <param id="0" name="Animation">&quot;Animation&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="2635223972390348" type="System">
-                            <param id="0" name="Seconds">3.8</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="5853729703730275" type="Semaforo" />
-                        <action behavior="Car" id="8" name="Set enabled" sid="4755295863091446" type="Car">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Car" id="3" name="Set speed" sid="1955357917863235" type="Car">
-                            <param id="0" name="Speed">400</param>
-                        </action>
-                        <action behavior="Car" id="6" name="Set deceleration" sid="7135312283721552" type="Car">
-                            <param id="0" name="Deceleration">0</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="4697597601332142" type="ScoreTxt">
-                            <param id="0" name="X">394</param>
-                            <param id="1" name="Y">50</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="6700753984540084">
-                    <conditions>
-                        <condition id="6" name="On button pressed" sid="872943479176359" type="Gamepad">
-                            <param id="0" name="Gamepad">0</param>
-                            <param id="1" name="Button">9</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="7577223003414405" type="Semaforo">
-                            <param id="0" name="X">164</param>
-                            <param id="1" name="Y">438</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="8937608760338133" type="Semaforo">
-                            <param id="0" name="Animation">&quot;Animation&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="3004919932634066" type="System">
-                            <param id="0" name="Seconds">3.0</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="472798172124428" type="Semaforo" />
-                        <action behavior="Car" id="8" name="Set enabled" sid="5593036984215478" type="Car">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Car" id="3" name="Set speed" sid="711190735589083" type="Car">
-                            <param id="0" name="Speed">400</param>
-                        </action>
-                        <action behavior="Car" id="6" name="Set deceleration" sid="608513025757522" type="Car">
-                            <param id="0" name="Deceleration">0</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="3478006715598198" type="ScoreTxt">
                             <param id="0" name="X">394</param>
                             <param id="1" name="Y">50</param>
                         </action>

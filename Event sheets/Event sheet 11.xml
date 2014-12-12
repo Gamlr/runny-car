@@ -54,10 +54,18 @@
         </event-block>
         <event-group description="" sid="9309471781525085" title="Start the game2">
             <sub-events>
-                <event-block sid="7443645024160699">
+                <event-block any="1" sid="7443645024160699">
                     <conditions>
                         <condition id="0" name="On key pressed" sid="8048884535303504" type="Keyboard">
                             <param id="0" name="Key">13 (Return)</param>
+                        </condition>
+                        <condition id="0" name="On click" sid="1186033411347655" type="Mouse">
+                            <param id="0" name="Mouse button">1</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="872943479176359" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">9</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -71,52 +79,6 @@
                             <param id="0" name="Deceleration">0</param>
                         </action>
                         <action id="-3" name="Set position" sid="165780902848658" type="ScoreTxt">
-                            <param id="0" name="X">394</param>
-                            <param id="1" name="Y">50</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="6071812031757885">
-                    <conditions>
-                        <condition id="0" name="On click" sid="1186033411347655" type="Mouse">
-                            <param id="0" name="Mouse button">1</param>
-                            <param id="1" name="Click type">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Car" id="8" name="Set enabled" sid="4755295863091446" type="Car">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Car" id="3" name="Set speed" sid="1955357917863235" type="Car">
-                            <param id="0" name="Speed">400</param>
-                        </action>
-                        <action behavior="Car" id="6" name="Set deceleration" sid="7135312283721552" type="Car">
-                            <param id="0" name="Deceleration">0</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="4697597601332142" type="ScoreTxt">
-                            <param id="0" name="X">394</param>
-                            <param id="1" name="Y">50</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="6700753984540084">
-                    <conditions>
-                        <condition id="6" name="On button pressed" sid="872943479176359" type="Gamepad">
-                            <param id="0" name="Gamepad">0</param>
-                            <param id="1" name="Button">9</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Car" id="8" name="Set enabled" sid="5593036984215478" type="Car">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Car" id="3" name="Set speed" sid="711190735589083" type="Car">
-                            <param id="0" name="Speed">400</param>
-                        </action>
-                        <action behavior="Car" id="6" name="Set deceleration" sid="608513025757522" type="Car">
-                            <param id="0" name="Deceleration">0</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="3478006715598198" type="ScoreTxt">
                             <param id="0" name="X">394</param>
                             <param id="1" name="Y">50</param>
                         </action>
