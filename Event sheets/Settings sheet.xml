@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Settings sheet</name>
     <events>
-        <variable constant="0" name="language" sid="4406572043825048" static="0" type="text">en</variable>
+        <variable constant="0" name="language" sid="4406572043825048" static="0" type="text">en-US</variable>
         <event-block sid="3374972846932595">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="4649459802718635" type="System" />
