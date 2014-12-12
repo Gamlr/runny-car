@@ -203,8 +203,8 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-43" name="Go to next/previous layout" sid="8054643695778642" type="System">
-                            <param id="0" name="Which">1</param>
+                        <action id="-2" name="Go to layout" sid="8054643695778642" type="System">
+                            <param id="0" name="Layout">Start</param>
                         </action>
                     </actions>
                 </event-block>

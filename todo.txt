@@ -8,7 +8,6 @@ Minificaçao das strings de idiomas
 Tutorial first welcome
 Modos: Aventura, instant action, corrida, tiro
 Som "wi-oooon" quando o carro perde
-Todo in Github
 Speeh text for other languages beyond english
 Integration with Peeper Games API
 Todos os melhores idiomas e modo futebol na versão 2
@@ -16,3 +15,4 @@ Opçao para voltar ao menu apos game over
 Issues: bug ao passar de fase, highscores, ao atualizar linguagem, e ao passar 20 segundos na tela inicial
 fix error that need semaforo
 Used arrow keys to select between menus
+Function in settings to test gamepad

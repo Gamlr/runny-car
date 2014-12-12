@@ -2,7 +2,7 @@
 <c2project>
     <name>Runny Car</name>
     <description>O carro corre sem parar, e você apenas precisa movimentá-lo para a esquerda e direita. Tente, se puder! Seu carro corre sem parar, e nesse trajeto você deve desviar de objetos. Tudo deve ser feito no momento certo. Precisão, cálculos e estratégia são a chave.</description>
-    <version>2.4.1</version>
+    <version>2.4.2</version>
     <author>Daniell Mesquita</author>
     <author-email>daniellplasma@gmail.com</author-email>
     <author-website></author-website>

@@ -18,6 +18,24 @@
                     <param id="0" name="Mode">0</param>
                     <param id="1" name="Effect">&quot;Overlay&quot;</param>
                 </action>
+                <action id="-16" name="Wait" sid="3196427688326174" type="System">
+                    <param id="0" name="Seconds">20.0</param>
+                </action>
+                <action behavior="Car" id="8" name="Set enabled" sid="3385765217855712" type="Car">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Car" id="3" name="Set speed" sid="9226756267938961" type="Car">
+                    <param id="0" name="Speed">400</param>
+                </action>
+                <action behavior="Car" id="6" name="Set deceleration" sid="748685652313452" type="Car">
+                    <param id="0" name="Deceleration">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="5137416976462733" type="System">
+                    <param id="0" name="Seconds">3.5</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="1843362076525024" type="System">
+                    <param id="0" name="Layout">Demo</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="1911489541362786" title="Start">
@@ -78,31 +96,6 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="50710753649864" type="System">
                     <param id="0" name="Layout">About</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="271412034006029">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="9639832777307992" type="System" />
-            </conditions>
-            <actions>
-                <action id="-16" name="Wait" sid="3196427688326174" type="System">
-                    <param id="0" name="Seconds">20.0</param>
-                </action>
-                <action behavior="Car" id="8" name="Set enabled" sid="3385765217855712" type="Car">
-                    <param id="0" name="State">1</param>
-                </action>
-                <action behavior="Car" id="3" name="Set speed" sid="9226756267938961" type="Car">
-                    <param id="0" name="Speed">400</param>
-                </action>
-                <action behavior="Car" id="6" name="Set deceleration" sid="748685652313452" type="Car">
-                    <param id="0" name="Deceleration">0</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="1843362076525024" type="System">
-                    <param id="0" name="Layout">Demo</param>
-                </action>
-                <action id="-16" name="Wait" sid="5137416976462733" type="System">
-                    <param id="0" name="Seconds">3.0</param>
                 </action>
             </actions>
         </event-block>
