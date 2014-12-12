@@ -12,3 +12,4 @@ Som "wi-oooon" quando o carro perde
 Hightscores
 Todo in Github
 Speak text in choosen language (use new codes for languages)
+Integration with Peeper Games API
