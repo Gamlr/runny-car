@@ -192,12 +192,6 @@
             <sub-events>
                 <event-block any="1" sid="5839100435692923">
                     <conditions>
-                        <condition id="0" name="On key pressed" sid="4705128692303987" type="Keyboard">
-                            <param id="0" name="Key">8 (Backspace)</param>
-                        </condition>
-                        <condition id="0" name="On key pressed" sid="7365713052036081" type="Keyboard">
-                            <param id="0" name="Key">37 (Left arrow)</param>
-                        </condition>
                         <condition id="6" name="On object clicked" sid="2397611685471422" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>

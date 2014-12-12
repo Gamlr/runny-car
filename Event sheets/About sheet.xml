@@ -88,12 +88,6 @@
             <sub-events>
                 <event-block any="1" sid="5839100435692923">
                     <conditions>
-                        <condition id="0" name="On key pressed" sid="4705128692303987" type="Keyboard">
-                            <param id="0" name="Key">8 (Backspace)</param>
-                        </condition>
-                        <condition id="0" name="On key pressed" sid="7365713052036081" type="Keyboard">
-                            <param id="0" name="Key">37 (Left arrow)</param>
-                        </condition>
                         <condition id="6" name="On object clicked" sid="2397611685471422" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
@@ -121,9 +115,6 @@
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">HPT</param>
                         </condition>
-                        <condition id="0" name="On key pressed" sid="8208075834424987" type="Keyboard">
-                            <param id="0" name="Key">13 (Return)</param>
-                        </condition>
                         <condition id="6" name="On button pressed" sid="5365935257195423" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
                             <param id="1" name="Button">0</param>
@@ -145,9 +136,6 @@
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">ST</param>
-                        </condition>
-                        <condition id="0" name="On key pressed" sid="915556108480666" type="Keyboard">
-                            <param id="0" name="Key">32 (Space)</param>
                         </condition>
                         <condition id="6" name="On button pressed" sid="324769325461042" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>

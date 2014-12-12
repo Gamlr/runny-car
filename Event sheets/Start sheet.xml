@@ -24,9 +24,6 @@
             <sub-events>
                 <event-block any="1" sid="7229843099129717">
                     <conditions>
-                        <condition id="0" name="On key pressed" sid="5099248529884113" type="Keyboard">
-                            <param id="0" name="Key">13 (Return)</param>
-                        </condition>
                         <condition id="6" name="On object clicked" sid="5777996775980865" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
@@ -49,9 +46,6 @@
             <sub-events>
                 <event-block any="1" sid="4461818260889221">
                     <conditions>
-                        <condition id="0" name="On key pressed" sid="7925087933185605" type="Keyboard">
-                            <param id="0" name="Key">70 (F)</param>
-                        </condition>
                         <condition id="6" name="On object clicked" sid="4904419889161763" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
@@ -75,9 +69,6 @@
         </event-group>
         <event-block any="1" sid="8232696017517219">
             <conditions>
-                <condition id="0" name="On key pressed" sid="7913761374558602" type="Keyboard">
-                    <param id="0" name="Key">73 (I)</param>
-                </condition>
                 <condition id="6" name="On object clicked" sid="1112611975157275" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>

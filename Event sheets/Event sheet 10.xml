@@ -52,9 +52,6 @@
             <sub-events>
                 <event-block any="1" sid="7443645024160699">
                     <conditions>
-                        <condition id="0" name="On key pressed" sid="8048884535303504" type="Keyboard">
-                            <param id="0" name="Key">13 (Return)</param>
-                        </condition>
                         <condition id="0" name="On click" sid="1186033411347655" type="Mouse">
                             <param id="0" name="Mouse button">1</param>
                             <param id="1" name="Click type">0</param>
@@ -86,9 +83,6 @@
             <sub-events>
                 <event-block any="1" sid="6166660962201117">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="9376165950274958" type="Keyboard">
-                            <param id="0" name="Key">65 (A)</param>
-                        </condition>
                         <condition id="2" name="Mouse button is down" sid="1898589595769957" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                         </condition>
@@ -111,9 +105,6 @@
                 </event-block>
                 <event-block any="1" sid="3149603978121555">
                     <conditions>
-                        <condition id="2" name="Key is down" sid="3440463003700232" type="Keyboard">
-                            <param id="0" name="Key">68 (D)</param>
-                        </condition>
                         <condition id="2" name="Mouse button is down" sid="3547586744573539" type="Mouse">
                             <param id="0" name="Mouse button">2</param>
                         </condition>
@@ -269,9 +260,6 @@
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>
                             <param id="2" name="Object clicked">Play</param>
-                        </condition>
-                        <condition id="0" name="On key pressed" sid="2653123477961142" type="Keyboard">
-                            <param id="0" name="Key">13 (Return)</param>
                         </condition>
                         <condition id="6" name="On button pressed" sid="1634452028833094" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
