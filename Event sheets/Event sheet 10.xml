@@ -83,18 +83,24 @@
             <sub-events>
                 <event-block any="1" sid="6166660962201117">
                     <conditions>
-                        <condition id="2" name="Mouse button is down" sid="1898589595769957" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                        </condition>
-                        <condition id="3" name="Is button down" sid="8731216506457404" type="Gamepad">
-                            <param id="0" name="Gamepad">0</param>
-                            <param id="1" name="Button">14</param>
-                        </condition>
-                        <condition id="5" name="Compare axis" sid="5711079790672697" type="Gamepad">
+                        <condition id="5" name="Compare axis" sid="7939483667094015" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
                             <param id="1" name="Axis">0</param>
                             <param id="2" name="Comparison">2</param>
                             <param id="3" name="Value">-25</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="7556829308019564" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">2</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">-25</param>
+                        </condition>
+                        <condition id="3" name="Is button down" sid="5645823868715935" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">14</param>
+                        </condition>
+                        <condition id="2" name="Mouse button is down" sid="1898589595769957" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -105,18 +111,24 @@
                 </event-block>
                 <event-block any="1" sid="3149603978121555">
                     <conditions>
-                        <condition id="2" name="Mouse button is down" sid="3547586744573539" type="Mouse">
-                            <param id="0" name="Mouse button">2</param>
-                        </condition>
-                        <condition id="3" name="Is button down" sid="7236286976694301" type="Gamepad">
-                            <param id="0" name="Gamepad">0</param>
-                            <param id="1" name="Button">15</param>
-                        </condition>
-                        <condition id="5" name="Compare axis" sid="2883660457882954" type="Gamepad">
+                        <condition id="5" name="Compare axis" sid="5470340177620581" type="Gamepad">
                             <param id="0" name="Gamepad">0</param>
                             <param id="1" name="Axis">0</param>
                             <param id="2" name="Comparison">4</param>
                             <param id="3" name="Value">25</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="7560904849834693" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">2</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">25</param>
+                        </condition>
+                        <condition id="3" name="Is button down" sid="146153155710912" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">15</param>
+                        </condition>
+                        <condition id="2" name="Mouse button is down" sid="3547586744573539" type="Mouse">
+                            <param id="0" name="Mouse button">2</param>
                         </condition>
                     </conditions>
                     <actions>
