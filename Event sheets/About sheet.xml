@@ -7,47 +7,12 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="5754253131853392" type="System" />
             </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="1341854162703062">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="6012875325147696" type="System">
-                            <param id="0" name="Variable">FirstPlay</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;true&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set local value" sid="6969598769991067" type="WebStorage">
-                            <param id="0" name="Key">&quot;Language&quot;</param>
-                            <param id="1" name="Value">&quot;en-US&quot;</param>
-                        </action>
-                        <action id="0" name="Request URL" sid="5415166844543295" type="AJAX">
-                            <param id="0" name="Tag">&quot;loadLanguageFile&quot;</param>
-                            <param id="1" name="URL">&quot;strings.&quot; &amp; Webstorage.localvalue(&quot;Language&quot;) &amp; &quot;.xml&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="1975406490569135">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="3171781955632182" type="System">
-                            <param id="0" name="Variable">FirstPlay</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;false&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="5596512128696028" type="System">
-                            <param id="0" name="Variable">language</param>
-                            <param id="1" name="Value">Webstorage.localvalue(&quot;Language&quot;)</param>
-                        </action>
-                        <action id="0" name="Request URL" sid="5702652768068261" type="AJAX">
-                            <param id="0" name="Tag">&quot;loadLanguageFile&quot;</param>
-                            <param id="1" name="URL">&quot;strings.&quot; &amp; Webstorage.localvalue(&quot;Language&quot;) &amp; &quot;.xml&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
+            <actions>
+                <action id="0" name="Request URL" sid="4811333827737753" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadLanguageFile&quot;</param>
+                    <param id="1" name="URL">&quot;strings.&quot; &amp; Webstorage.localvalue(&quot;Language&quot;) &amp; &quot;.xml&quot;</param>
+                </action>
+            </actions>
         </event-block>
         <event-group description="" sid="6764533494957742" title="Language3">
             <sub-events>
