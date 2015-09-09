@@ -3,78 +3,49 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>How sheet</name>
     <events>
+        <include>Common sheet</include>
         <event-block sid="7379532425492407">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="4204582069923506" type="System" />
             </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="5039463374874426">
+            <conditions>
+                <condition id="0" name="On function" sid="7038568413680509" type="f">
+                    <param id="0" name="Name">&quot;updateText&quot;</param>
+                </condition>
+            </conditions>
             <actions>
-                <action id="0" name="Request URL" sid="2814240220168438" type="AJAX">
-                    <param id="0" name="Tag">&quot;loadLanguageFile&quot;</param>
-                    <param id="1" name="URL">&quot;strings.&quot; &amp; Webstorage.localvalue(&quot;Language&quot;) &amp; &quot;.xml&quot;</param>
+                <action id="0" name="Set text" sid="9581223860367202" type="HeadingTxt">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;howplay&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="8390260692077343" type="StartTutoTxt">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;starthegame&quot;)</param>
+                </action>
+                <action id="0" name="Set text" sid="9326540709935087" type="DriveTutoTxt">
+                    <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;drivethecar&quot;)</param>
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="2728570623447273" title="Language2">
-            <sub-events>
-                <event-block sid="2218898336694187">
-                    <conditions>
-                        <condition id="0" name="On completed" sid="9735434221406154" type="AJAX">
-                            <param id="0" name="Tag">&quot;loadLanguageFile&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Load" sid="6635162991354548" type="XML">
-                            <param id="0" name="XML">AJAX.LastData</param>
-                        </action>
-                        <action id="0" name="Call function" sid="2068280566774226" type="f">
-                            <param id="0" name="Name">&quot;updateText&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="5039463374874426">
-                    <conditions>
-                        <condition id="0" name="On function" sid="7038568413680509" type="f">
-                            <param id="0" name="Name">&quot;updateText&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="9581223860367202" type="HeadingTxt">
-                            <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;howplay&quot;)</param>
-                        </action>
-                        <action id="0" name="Set text" sid="8390260692077343" type="StartTutoTxt">
-                            <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;starthegame&quot;)</param>
-                        </action>
-                        <action id="0" name="Set text" sid="9326540709935087" type="DriveTutoTxt">
-                            <param id="0" name="Text">f.Call(&quot;getText&quot;, &quot;drivethecar&quot;)</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="1029767389110483">
-                    <conditions>
-                        <condition id="0" name="On function" sid="6835148960053251" type="f">
-                            <param id="0" name="Name">&quot;getText&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="1" name="Set return value" sid="9875097331599928" type="f">
-                            <param id="0" name="Value">XML.StringValue(&quot;/strings/string[@id=&apos;&quot; &amp; f.Param(0) &amp; &quot;&apos;]/text()&quot;)</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-block any="1" sid="7766414250650473">
+        <event-block any="1" sid="5183781506360388">
             <conditions>
-                <condition id="6" name="On object clicked" sid="1043053754011265" type="Mouse">
+                <condition id="0" name="On key pressed" sid="4927273615680288" type="Keyboard">
+                    <param id="0" name="Key">8 (Backspace)</param>
+                </condition>
+                <condition id="6" name="On object clicked" sid="9131933993301667" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">arrowleft</param>
                 </condition>
+                <condition id="6" name="On button pressed" sid="4928160267731367" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">9</param>
+                </condition>
             </conditions>
             <actions>
-                <action id="-43" name="Go to next/previous layout" sid="4021552162137526" type="System">
-                    <param id="0" name="Which">1</param>
+                <action id="-2" name="Go to layout" sid="9177461260015368" type="System">
+                    <param id="0" name="Layout">About</param>
                 </action>
             </actions>
         </event-block>

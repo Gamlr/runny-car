@@ -1,27 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Runny Car</name>
-    <description>O carro corre sem parar, e você apenas precisa movimentá-lo para a esquerda e direita. Tente, se puder! Seu carro corre sem parar, e nesse trajeto você deve desviar de objetos. Tudo deve ser feito no momento certo. Precisão, cálculos e estratégia são a chave.</description>
-    <version>2.4.4</version>
-    <author>Daniell Mesquita</author>
+    <description>Esse carrinho sofreu um defeito no freio, o que o faz correr sem parar. Agora cabe à você controlá-lo para esquerda/direita para desviar-se dos obstáculos.</description>
+    <version>1.0.2.3</version>
+    <author>Gamlr</author>
     <author-email>daniellplasma@gmail.com</author-email>
-    <author-website></author-website>
-    <app-id></app-id>
+    <author-website>http://</author-website>
+    <app-id>com.gamlr.runnycar</app-id>
     <unique-id>2t4bm36f461uu</unique-id>
-    <saved-with-version>19100</saved-with-version>
+    <saved-with-version>20402</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="CJSAds" version="1">CocoonJS</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Scirra" id="UserMedia" version="1">User Media</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
         <plugin author="Scirra" id="XML" version="1">XML</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+        <plugin author="Scirra" id="googleplay" version="1">Google Play</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
@@ -45,9 +50,9 @@
     <first-layout>Logo</first-layout>
     <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
-        <prop name="Fullscreen in browser">Scale inner</prop>
+        <prop name="Fullscreen in browser">Scale outer</prop>
         <prop name="Orientations">Landscape</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">NW.js</prop>
         <prop name="Preview mode">HTTP</prop>
     </configuration-settings>
     <object-folder>
@@ -376,7 +381,7 @@
         <object-type name="VersionTxt" sid="8704280445884919">
             <plugin id="Text" />
         </object-type>
-        <object-type name="HPT" sid="6067682340325423">
+        <object-type name="How2Play" sid="6067682340325423">
             <plugin id="Text" />
         </object-type>
         <object-type name="CreatedTxt" sid="2203894573745757">
@@ -415,7 +420,7 @@
                 <animation framecount="1" loop="0" name="es" pingpong="0" repeatcount="1" repeatto="0" sid="3729478316973815" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.515152" />
                 </animation>
-                <animation framecount="1" loop="0" name="br" pingpong="0" repeatcount="1" repeatto="0" sid="2699852760433574" speed="5">
+                <animation framecount="1" loop="0" name="pt" pingpong="0" repeatcount="1" repeatto="0" sid="2699852760433574" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.515152" original-source="C:\Users\Daniell\Desktop\BR.gif" />
                 </animation>
                 <animation framecount="1" loop="0" name="kr" pingpong="0" repeatcount="1" repeatto="0" sid="5696437466494382" speed="5">
@@ -570,17 +575,42 @@
         <object-type name="HighTxt" sid="9774463766261768">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Keyboard" sid="844401260450416">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="BuildDescription" sid="4000651199487098">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Creators_Text" sid="4881108744780997">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BuildWatermark" sid="4159622328124351">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LocalStorage" sid="661896130984307">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="GooglePlay" sid="1332840949200424">
+            <plugin id="googleplay" />
+        </object-type>
+        <object-type name="Touch" sid="46804481985491">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Audio" sid="6615409972442622">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
+        <layout>Creators.xml</layout>
         <layout>Logo.xml</layout>
         <layout>Start.xml</layout>
         <layout>About.xml</layout>
         <layout>How.xml</layout>
+        <layout>Settings.xml</layout>
+        <layout>Demo.xml</layout>
         <layout>Layout 10.xml</layout>
         <layout>Layout 11.xml</layout>
-        <layout>Demo.xml</layout>
-        <layout>Settings.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 10.xml</event-sheet>
@@ -591,6 +621,9 @@
         <event-sheet>Event sheet 11.xml</event-sheet>
         <event-sheet>Demo sheet.xml</event-sheet>
         <event-sheet>Settings sheet.xml</event-sheet>
+        <event-sheet>Common in-game sheet.xml</event-sheet>
+        <event-sheet>Creators sheet.xml</event-sheet>
+        <event-sheet>Common sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="8" />
@@ -609,9 +642,48 @@
         <global-instance type="WebStorage" uid="90" />
         <global-instance type="AJAX" uid="92" />
         <global-instance type="f" uid="95" />
+        <global-instance type="Keyboard" uid="9" />
+        <global-instance type="LocalStorage" uid="34" />
+        <global-instance type="GooglePlay" uid="35">
+            <properties>
+                <application-id></application-id>
+                <client-id></client-id>
+                <client-secret></client-secret>
+            </properties>
+        </global-instance>
+        <global-instance type="Touch" uid="84">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="85">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
-    <music-folder />
+    <music-folder>
+        <file name="Beat.m4a" />
+        <file name="Beat.ogg" />
+        <file name="Gamlr_G.m4a" />
+        <file name="Gamlr_G.ogg" />
+        <file name="Touch.m4a" />
+        <file name="Touch.ogg" />
+        <file name="Gamlr.m4a" />
+        <file name="Gamlr.ogg" />
+        <file name="Creators.m4a" />
+        <file name="Creators.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />
@@ -622,12 +694,13 @@
             <file name="loading-logo.png" />
         </file-folder>
         <file name="strings.de.xml" />
-        <file name="strings.en-US.xml" />
+        <file name="strings.en.xml" />
         <file name="strings.es.xml" />
         <file name="strings.fr.xml" />
-        <file name="strings.br.xml" />
+        <file name="strings.pt.xml" />
         <file name="strings.it.xml" />
         <file name="strings.kr.xml" />
         <file name="strings.jp.xml" />
+        <file name="PressStart2P.ttf" />
     </files-folder>
 </c2project>

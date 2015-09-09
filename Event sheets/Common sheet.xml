@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Common sheet</name>
+    <events>
+        <variable constant="0" name="Build" sid="6003688088303563" static="0" type="text">0740</variable>
+        <variable constant="0" name="Chain_Events_Number" sid="5658858908190602" static="0" type="text">Worldwide Kindness</variable>
+        <variable constant="0" name="Warning" sid="3874800260682033" static="0" type="text">No</variable>
+        <event-block sid="3132643421825867">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6410763853796364" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1235073030956313" type="BuildWatermark">
+                    <param id="0" name="Text">&quot;Evaluation copy. Build &quot; &amp; Build</param>
+                </action>
+                <action id="0" name="Set text" sid="686092388335812" type="VersionTxt">
+                    <param id="0" name="Text">projectversion</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="7149445193915491">
+                    <conditions>
+                        <condition id="6" name="Compare key value (as text)" sid="2526455709354849" type="WebStorage">
+                            <param id="0" name="Key">&quot;Language_Changed&quot;</param>
+                            <param id="1" name="Text to compare">&quot;Yes&quot;</param>
+                            <param id="2" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="4774841149492061" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="1124001857923306" type="WebStorage">
+                            <param id="0" name="Key">&quot;language&quot;</param>
+                            <param id="1" name="Value">Webstorage.localvalue(&quot;language&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1073254370631135">
+                    <conditions>
+                        <condition id="6" inverted="1" name="Compare key value (as text)" sid="1952507311432835" type="WebStorage">
+                            <param id="0" name="Key">&quot;Language_Changed&quot;</param>
+                            <param id="1" name="Text to compare">&quot;Yes&quot;</param>
+                            <param id="2" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="2576614709088963" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set local value" sid="2256805964369328" type="WebStorage">
+                            <param id="0" name="Key">&quot;language&quot;</param>
+                            <param id="1" name="Value">&quot;en&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4274029977513418">
+                    <conditions />
+                    <actions>
+                        <action id="4" name="Set animation" sid="3847885738151242" type="flag">
+                            <param id="0" name="Animation">self.language</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Request URL" sid="190266660448294" type="AJAX">
+                            <param id="0" name="Tag">&quot;loadLanguageFile&quot;</param>
+                            <param id="1" name="URL">&quot;strings.&quot; &amp; Webstorage.localvalue(&quot;language&quot;) &amp; &quot;.xml&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="8703630668859615" title="Language">
+            <sub-events>
+                <comment>load file into an XML object and call the &quot;updateText&quot; function</comment>
+                <event-block sid="2218898336694187">
+                    <conditions>
+                        <condition id="0" name="On completed" sid="9735434221406154" type="AJAX">
+                            <param id="0" name="Tag">&quot;loadLanguageFile&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Load" sid="6635162991354548" type="XML">
+                            <param id="0" name="XML">AJAX.LastData</param>
+                        </action>
+                        <action id="0" name="Call function" sid="2068280566774226" type="f">
+                            <param id="0" name="Name">&quot;updateText&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>the &quot;getText&quot; function takes the string id as a parameter and returns the correct string from the XML file</comment>
+                <event-block sid="1029767389110483">
+                    <conditions>
+                        <condition id="0" name="On function" sid="6835148960053251" type="f">
+                            <param id="0" name="Name">&quot;getText&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="1" name="Set return value" sid="9875097331599928" type="f">
+                            <param id="0" name="Value">XML.StringValue(&quot;/strings/string[@id=&apos;&quot; &amp; f.Param(0) &amp; &quot;&apos;]/text()&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

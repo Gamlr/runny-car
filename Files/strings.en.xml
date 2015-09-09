@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+	<string id='about'>About</string>
+	<string id='created'>Created on 03.17.14</string>
+	<string id='settings'>Settings</string>
+	<string id='howplay'>How to play</string>
+	<string id='starthegame'>Start the game</string>
+	<string id='drivethecar'>Drive the car</string>
+	<string id='author'>Game created by Daniell Mesquita, CEO of Gamlr</string>
+	<string id='15points'>Reach 15 points to go to next level. 15 points!</string>
+</strings>

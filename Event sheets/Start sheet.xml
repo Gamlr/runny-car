@@ -42,6 +42,9 @@
             <sub-events>
                 <event-block any="1" sid="7229843099129717">
                     <conditions>
+                        <condition id="0" name="On key pressed" sid="8250917304222919" type="Keyboard">
+                            <param id="0" name="Key">13 (Return)</param>
+                        </condition>
                         <condition id="6" name="On object clicked" sid="5777996775980865" type="Mouse">
                             <param id="0" name="Mouse button">0</param>
                             <param id="1" name="Click type">0</param>

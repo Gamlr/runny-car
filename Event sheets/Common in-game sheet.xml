@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Common in-game sheet</name>
+    <events>
+        <variable constant="0" name="Game_Started" sid="7578174931524712" static="0" type="text">No</variable>
+        <variable constant="0" name="Required_Score" sid="9704323356586035" static="0" type="number">0</variable>
+        <variable constant="0" name="Highscore" sid="6537296104485308" static="0" type="number">0</variable>
+        <variable constant="0" name="score" sid="2866297861847926" static="0" type="number">0</variable>
+        <include>Common sheet</include>
+        <event-block sid="4875772851080921">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1003760125847456" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Speak text" sid="8002321859296728" type="UserMedia">
+                    <param id="0" name="Text">&quot;Reach 15 points to go to next level. 15 points!&quot;</param>
+                    <param id="1" name="Language">Webstorage.localvalue(&quot;language&quot;)</param>
+                    <param id="2" name="Voice URI">&quot;&quot;</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="4" name="Rate">1</param>
+                    <param id="5" name="Pitch">1</param>
+                </action>
+                <action behavior="Car" id="8" name="Set enabled" sid="6228524426172105" type="Car">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="293258911560145" type="GameOver">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="858781947890811" type="Play">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="8218618595810796" type="Rank">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5291242964371612" type="HighTxt">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-27" name="Set effect enabled" sid="3374401258124603" type="Car">
+                    <param id="0" name="Mode">0</param>
+                    <param id="1" name="Effect">&quot;Overlay&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="7233331784151662" type="ScoreTxt">
+                    <param id="0" name="Family name">&quot;Press Start 2P&quot;</param>
+                    <param id="1" name="CSS URL">&quot;PressStart2P.ttf&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4188403419986014">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="337402038070572" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3633986147346631" type="ScoreTxt">
+                    <param id="0" name="Text">score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="8929214208466945" title="Start the game">
+            <sub-events>
+                <event-block any="1" sid="1131375237221254">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="1509744359700514" type="System">
+                            <param id="0" name="Variable">Game_Started</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;No&quot;</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5092486590617652" type="System">
+                            <param id="0" name="Variable">Game_Started</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Now&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="7443645024160699">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="462286835272537" type="System">
+                                    <param id="0" name="Variable">Game_Started</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Now&quot;</param>
+                                </condition>
+                                <condition id="0" name="On click" sid="1186033411347655" type="Mouse">
+                                    <param id="0" name="Mouse button">1</param>
+                                    <param id="1" name="Click type">0</param>
+                                </condition>
+                                <condition id="6" name="On button pressed" sid="872943479176359" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">9</param>
+                                </condition>
+                                <condition id="0" name="On key pressed" sid="1875672960322369" type="Keyboard">
+                                    <param id="0" name="Key">13 (Return)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="2868080820074708" type="System">
+                                    <param id="0" name="Variable">Game_Started</param>
+                                    <param id="1" name="Value">&quot;Yes&quot;</param>
+                                </action>
+                                <action behavior="Car" id="8" name="Set enabled" sid="8190664828096785" type="Car">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Car" id="3" name="Set speed" sid="5518512490683065" type="Car">
+                                    <param id="0" name="Speed">400</param>
+                                </action>
+                                <action behavior="Car" id="6" name="Set deceleration" sid="7326357860967483" type="Car">
+                                    <param id="0" name="Deceleration">0</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="165780902848658" type="ScoreTxt">
+                                    <param id="0" name="X">394</param>
+                                    <param id="1" name="Y">50</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="2713887347983101" title="Drive the car">
+            <sub-events>
+                <event-block any="1" sid="6166660962201117">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="3791249957058119" type="Keyboard">
+                            <param id="0" name="Key">65 (A)</param>
+                        </condition>
+                        <condition id="2" name="Mouse button is down" sid="1898589595769957" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="7939483667094015" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">-25</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="7556829308019564" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">2</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">-25</param>
+                        </condition>
+                        <condition id="3" name="Is button down" sid="5645823868715935" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Car" id="7" name="Simulate control" sid="9941866801008299" type="Car">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="3149603978121555">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="1080801167422463" type="Keyboard">
+                            <param id="0" name="Key">68 (D)</param>
+                        </condition>
+                        <condition id="2" name="Mouse button is down" sid="3547586744573539" type="Mouse">
+                            <param id="0" name="Mouse button">2</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="5470340177620581" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">25</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="7560904849834693" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">2</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">25</param>
+                        </condition>
+                        <condition id="3" name="Is button down" sid="146153155710912" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Car" id="7" name="Simulate control" sid="6993384439946507" type="Car">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="1476850606838772" title="Score System">
+            <sub-events>
+                <event-block sid="6615060981560124">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7662267966284763" type="Car">
+                            <param id="0" name="Object">1pt</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="165769334464235" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="9419145206411682" type="1pt" />
+                    </actions>
+                </event-block>
+                <event-block sid="6105877979116557">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4795789324873537" type="Car">
+                            <param id="0" name="Object">2pt</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="24844849727567" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="7826853027916091" type="2pt" />
+                    </actions>
+                </event-block>
+                <event-block sid="9173388268519495">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3083833147880235" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Required_Score</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="1640555817541378" type="System">
+                            <param id="0" name="Variable">Game_Started</param>
+                            <param id="1" name="Value">&quot;No&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8748367626414191" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="1689810044638974" type="WebStorage">
+                            <param id="0" name="Key">&quot;levelhighscore&quot;</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-43" name="Go to next/previous layout" sid="5916255069037797" type="System">
+                            <param id="0" name="Which">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="5602668640154941" title="Game over">
+            <sub-events>
+                <event-block sid="5022662375781347">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="9289955837703776" type="Car">
+                            <param id="0" name="Object">Pipe</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="12" name="Vibrate" sid="1856948558704706" type="Browser">
+                            <param id="0" name="Pattern">&quot;200,100,200&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="3649861107748995" type="Car" />
+                        <action id="0" name="Show banner ad" sid="209630468385041" type="CocoonJS">
+                            <param id="0" name="Layout">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3313762892337748" type="GameOver">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="2699728480719382" type="GameOver">
+                            <param id="0" name="X">381</param>
+                            <param id="1" name="Y">283</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9697080680158992" type="Play">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="7420862199176963" type="Play">
+                            <param id="0" name="X">211</param>
+                            <param id="1" name="Y">324</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="4200634324223529" type="Rank">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="796307276546505" type="Rank">
+                            <param id="0" name="X">376</param>
+                            <param id="1" name="Y">324</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="768633429143163" type="ScoreTxt">
+                            <param id="0" name="X">486</param>
+                            <param id="1" name="Y">210</param>
+                        </action>
+                        <action id="3" name="Set font size" sid="4872474097441034" type="ScoreTxt">
+                            <param id="0" name="Size (pt)">34</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="3715765483350243" type="HighTxt">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="9186805226831796" type="HighTxt">
+                            <param id="0" name="X">484</param>
+                            <param id="1" name="Y">290</param>
+                        </action>
+                        <action id="0" name="Set text" sid="9392284129474525" type="HighTxt">
+                            <param id="0" name="Text">Webstorage.localvalue(&quot;highscore&quot;)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6751472148665131" type="System">
+                            <param id="0" name="Variable">Game_Started</param>
+                            <param id="1" name="Value">&quot;Over&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="2753536003570937">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="7043112516430884" type="System">
+                                    <param id="0" name="First value">score</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">Webstorage.localvalue(&quot;levelhighscore&quot;)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set local value" sid="955925075883409" type="WebStorage">
+                                    <param id="0" name="Key">&quot;levelhighscore&quot;</param>
+                                    <param id="1" name="Value">score</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9797582788814283">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="698054145360366" type="System">
+                            <param id="0" name="Variable">Game_Started</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Over&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="4430432997408427">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="8872975607058293" type="Keyboard">
+                                    <param id="0" name="Key">13 (Return)</param>
+                                </condition>
+                                <condition id="6" name="On object clicked" sid="710244822595314" type="Mouse">
+                                    <param id="0" name="Mouse button">0</param>
+                                    <param id="1" name="Click type">0</param>
+                                    <param id="2" name="Object clicked">Play</param>
+                                </condition>
+                                <condition id="6" name="On button pressed" sid="1634452028833094" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="5571956600793431" type="System">
+                                    <param id="0" name="Variable">Game_Started</param>
+                                    <param id="1" name="Value">&quot;Now&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="2990888957015512" type="System">
+                                    <param id="0" name="Variable">score</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-26" name="Restart layout" sid="2523796626036442" type="System" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
