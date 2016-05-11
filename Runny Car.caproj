@@ -2,13 +2,13 @@
 <c2project>
     <name>Runny Car</name>
     <description>Esse carrinho sofreu um defeito no freio, o que o faz correr sem parar. Agora cabe à você controlá-lo para esquerda/direita para desviar-se dos obstáculos.</description>
-    <version>1.0.2.3</version>
+    <version>1.0.2.5</version>
     <author>Gamlr</author>
     <author-email>daniellplasma@gmail.com</author-email>
     <author-website>http://</author-website>
     <app-id>com.gamlr.runnycar</app-id>
     <unique-id>2t4bm36f461uu</unique-id>
-    <saved-with-version>20402</saved-with-version>
+    <saved-with-version>22700</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>

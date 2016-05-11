@@ -31,7 +31,7 @@
             <instances>
                 <instance type="Creators_Text" uid="11">
                     <properties>
-                        <text>2014-2015 Gamlr by Daniell Mesquita</text>
+                        <text>2014-2016 Gamlr by Daniell Mesquita</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Arial Black,-30,900,0</font>
                         <color>0,0,0</color>
@@ -58,7 +58,7 @@
                 </instance>
                 <instance type="Creators_Text" uid="31">
                     <properties>
-                        <text>2014-2015 Plasmmer by Daniell Mesquita</text>
+                        <text>2014-2016 Plasmmer by Daniell Mesquita</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Arial Black,-30,900,0</font>
                         <color>0,0,0</color>
